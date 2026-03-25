@@ -1,4 +1,10 @@
-<!DOCTYPE html>
+Analisei o projetos.html. A estrutura está muito mais limpa que o anterior, mas tem o mesmo problema principal — o page-header está mal organizado.
+Problema encontrado:
+
+projects-section dentro do page-header — tal como no equipa.html, o cabeçalho (tag, título, descrição) está depois da secção de conteúdo, quando devia estar antes e a secção devia ficar fora do page-header.
+
+O resto (cards, footer, navbar) está tudo correto e bem fechado.
+html<!DOCTYPE html>
 <html lang="pt">
 <head>
   <meta charset="UTF-8" />
@@ -18,52 +24,64 @@
     </ul>
     <button class="nav-toggle" onclick="toggleMenu()">☰</button>
   </nav>
+
+  <!-- ✅ page-header apenas com o cabeçalho da página -->
   <div class="page-header">
-    <section class="projects-section">
+    <div class="about-tag">— Casos que nos envergonham com orgulho</div>
+    <h1>Os nossos <span>projetos</span></h1>
+    <p>Uma coleção de problemas que aceitámos resolver e que provavelmente tornámos piores.</p>
+  </div>
+
+  <!-- ✅ projects-section fora do page-header -->
+  <section class="projects-section">
     <div class="projects-grid">
+
       <div class="project-card">
         <div class="project-tag">🖨️ Caso #001 — Tecnologia</div>
         <div class="project-title">A Impressora que Só Funciona Quando Ninguém Está a Olhar</div>
         <p class="project-desc">Após 6 meses de investigação intensiva, concluímos que a impressora é tímida. Solução: instalar uma cortina.</p>
         <div class="project-result">✓ Resultado: a cortina caiu. Problema continua.</div>
       </div>
+
       <div class="project-card">
         <div class="project-tag">📁 Caso #002 — Organização</div>
         <div class="project-title">Renomeação Estratégica da Pasta "Documentos"</div>
         <p class="project-desc">Consultoria de 6 meses para renomear a pasta principal. A nova pasta chama-se "Documentos2_final_v3_ESTE".</p>
         <div class="project-result">✓ Resultado: criámos 4 pastas novas por acidente.</div>
       </div>
+
       <div class="project-card">
         <div class="project-tag">☕ Caso #003 — Recursos Humanos</div>
         <div class="project-title">Otimização da Fila da Máquina de Café</div>
         <p class="project-desc">Empresa com 3 andares e 1 máquina. Propusemos comprar outra. Chefe disse que não. Fizemos um cronograma de turnos. Demitimo-nos. Voltámos.</p>
         <div class="project-result">✓ Resultado: voltámos. O cronograma falhou.</div>
       </div>
+
       <div class="project-card">
         <div class="project-tag">📧 Caso #004 — Comunicação</div>
         <div class="project-title">Transformar uma Reunião de 2h numa Reunião de 4h</div>
         <p class="project-desc">Cliente pediu reuniões "mais eficientes". Adicionámos uma ronda de partilha emocional. A reunião duplicou. O cliente está satisfeito.</p>
         <div class="project-result">✓ Resultado: produtividade desceu 40%. Moral subiu.</div>
       </div>
+
       <div class="project-card">
         <div class="project-tag">🔑 Caso #005 — Segurança</div>
         <div class="project-title">Auditoria de Passwords "123456"</div>
         <p class="project-desc">200 funcionários com a mesma password. Propusemos "123456!" com ponto de exclamação. Aprovado por unanimidade na reunião de segurança.</p>
         <div class="project-result">✓ Resultado: hackeados em 3 dias. Voltaram a "123456".</div>
       </div>
+
       <div class="project-card">
         <div class="project-tag">🌿 Caso #006 — Sustentabilidade</div>
         <div class="project-title">Estratégia de Sustentabilidade para Empresa de Papel</div>
         <p class="project-desc">Sugerimos vender menos papel. Fomos convidados a sair. Voltámos com uma planta para o escritório. Ficámos.</p>
         <div class="project-result">✓ Resultado: a planta morreu. Continuamos cá.</div>
       </div>
+
     </div>
   </section>
-    <div class="about-tag">— Casos que nos envergonham com orgulho</div>
-    <h1>Os nossos <span>projetos</span></h1>
-    <p>Uma coleção de problemas que aceitámos resolver e que provavelmente tornámos piores.</p>
-  </div>
-<footer class="footer">
+
+  <footer class="footer">
     <div class="footer-logo">SJM<span>Solutions</span></div>
     <p class="footer-tagline">"Resolvemos problemas que nunca deveriam existir."</p>
     <nav class="footer-nav">
@@ -74,6 +92,7 @@
     </nav>
     <p class="footer-copy">© 2026 SJM Solutions. Todos os problemas reservados.</p>
   </footer>
-  <script src="script.js"></script>  
+
+  <script src="script.js"></script>
 </body>
 </html>
