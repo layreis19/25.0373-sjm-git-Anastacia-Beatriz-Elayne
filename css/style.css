@@ -46,3 +46,28 @@ a { text-decoration: none; color: inherit; }
 }
 .nav-links a:hover, .nav-links a.active { color: var(--accent); }
 .nav-toggle { display: none; background: none; border: none; color: var(--text); font-size: 1.5rem; cursor: pointer; }
+
+.hero {
+  min-height: 100vh;
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 8rem 4rem 4rem;
+  position: relative; overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; top: -200px; right: -200px;
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(232,255,71,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero-badge {
+  display: inline-block; font-family: var(--font-mono); font-size: 0.8rem;
+  color: var(--accent); border: 1px solid var(--accent);
+  padding: 0.4rem 1rem; border-radius: 2rem; margin-bottom: 2rem; width: fit-content;
+}
+.hero-title {
+  font-size: clamp(3rem, 8vw, 6rem); font-weight: 800;
+  line-height: 1.05; letter-spacing: -2px; max-width: 900px;
+}
+.hero-title span { color: var(--accent); }
+.hero-sub { margin-top: 1.5rem; max-width: 580px; color: var(--muted); font-size: 1.1rem; }
