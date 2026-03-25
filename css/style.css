@@ -71,3 +71,22 @@ a { text-decoration: none; color: inherit; }
 }
 .hero-title span { color: var(--accent); }
 .hero-sub { margin-top: 1.5rem; max-width: 580px; color: var(--muted); font-size: 1.1rem; }
+
+.hero-cta { margin-top: 2.5rem; display: flex; gap: 1rem; flex-wrap: wrap; }
+.btn-primary {
+  background: var(--accent); color: #000;
+  font-family: var(--font-display); font-weight: 700; font-size: 0.95rem;
+  padding: 0.9rem 2rem; border-radius: 0.3rem; transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(232,255,71,0.3); }
+.btn-secondary {
+  font-weight: 700; font-size: 0.95rem; padding: 0.9rem 2rem;
+  border: 1px solid var(--border); border-radius: 0.3rem; color: var(--text); transition: border-color 0.2s, color 0.2s;
+}
+.btn-secondary:hover { border-color: var(--accent); color: var(--accent); }
+.hero-stats {
+  margin-top: 5rem; display: flex; gap: 4rem; flex-wrap: wrap;
+  border-top: 1px solid var(--border); padding-top: 2rem;
+}
+.stat-num { display: block; font-size: 2.5rem; font-weight: 800; color: var(--accent); letter-spacing: -1px; }
+.stat-label { display: block; font-size: 0.8rem; color: var(--muted); font-family: var(--font-mono); max-width: 160px; }
