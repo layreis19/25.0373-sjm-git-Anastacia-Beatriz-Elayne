@@ -138,3 +138,22 @@ a { text-decoration: none; color: inherit; }
 .hero-sub { animation: fadeUp 0.6s 0.2s ease both; }
 .hero-cta { animation: fadeUp 0.6s 0.3s ease both; }
 .hero-stats { animation: fadeUp 0.6s 0.4s ease both; }
+
+@media (max-width: 900px) {
+  .navbar { padding: 1.2rem 1.5rem; }
+  .nav-links {
+    display: none; flex-direction: column;
+    position: absolute; top: 100%; left: 0; right: 0;
+    background: var(--bg); border-bottom: 1px solid var(--border);
+    padding: 1rem 2rem; gap: 1rem;
+  }
+  .nav-links.open { display: flex; }
+  .nav-toggle { display: block; }
+  .hero { padding: 7rem 1.5rem 3rem; }
+  .hero-stats { gap: 2rem; }
+  .about, .services { padding: 4rem 1.5rem; }
+  .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .services-grid { grid-template-columns: 1fr; }
+  .page-header { padding: 7rem 1.5rem 3rem; }
+  .footer { padding: 3rem 1.5rem; }
+}
