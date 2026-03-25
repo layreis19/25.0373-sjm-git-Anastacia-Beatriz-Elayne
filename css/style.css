@@ -105,3 +105,22 @@ a { text-decoration: none; color: inherit; }
 .card-icon { font-size: 1.5rem; margin-bottom: 0.5rem; }
 .about-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; }
 .about-card p { font-size: 0.9rem; color: var(--muted); line-height: 1.6; }
+
+
+.services { padding: 6rem 4rem; border-top: 1px solid var(--border); }
+.services-header { margin-bottom: 3rem; }
+.services-header h2 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; letter-spacing: -1px; }
+.services-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+.service-item { padding: 2.5rem; border: 1px solid var(--border); transition: background 0.2s; }
+.service-item:hover { background: var(--bg2); }
+.service-num { display: block; font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent); margin-bottom: 1rem; }
+.service-item h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.7rem; }
+.service-item p { font-size: 0.9rem; color: var(--muted); line-height: 1.7; }
+.footer { padding: 4rem; border-top: 1px solid var(--border); text-align: center; background: var(--bg2); }
+.footer-logo { font-size: 1.8rem; font-weight: 800; margin-bottom: 0.5rem; }
+.footer-logo span { color: var(--accent); }
+.footer-tagline { font-family: var(--font-mono); font-size: 0.85rem; color: var(--muted); font-style: italic; margin-bottom: 2rem; }
+.footer-nav { display: flex; justify-content: center; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap; }
+.footer-nav a { font-size: 0.85rem; color: var(--muted); text-transform: uppercase; font-weight: 700; transition: color 0.2s; }
+.footer-nav a:hover { color: var(--accent); }
+.footer-copy { font-size: 0.8rem; color: #555; font-family: var(--font-mono); }
