@@ -50,3 +50,12 @@ document.querySelectorAll('.team-card, .project-card, .about-card, .service-item
   el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
   observer.observe(el);
 });
+
+// Marcar link ativo na navbar com base na página atual
+const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.classList.remove('active');
+  if (link.getAttribute('href') === currentPage) {
+    link.classList.add('active');
+  }
+});
