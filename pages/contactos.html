@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Contacte a SJM Solutions. Descreva o seu problema inútil e nós ignoramo-lo com profissionalismo." />
+  <title>Contactos — SJM Solutions</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:ital,wght@0,400;1,400&display=swap" rel="stylesheet"/>
+</head>
+
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="logo">SJM<span>Solutions</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="equipa.html">Equipa</a></li>
+      <li><a href="projetos.html">Projetos</a></li>
+      <li><a href="contactos.html" class="active">Contactos</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+  </nav>
+<div class="page-header">
+    <div class="about-tag">— Fale connosco (se tiver coragem)</div>
+    <h1>Tem um problema <span>inútil?</span></h1>
+    <p>Preencha o formulário abaixo. Respondemos em 3 a 5 dias úteis ou quando nos lembrarmos.</p>
+</div>
+  <section class="contact-section">
+    <div class="contact-info">
+      <h2>Onde nos encontrar</h2>
+      <p>Estamos disponíveis para reuniões presenciais, chamadas de vídeo de 3 horas sobre assuntos de 5 minutos, e emails que nunca deviam ter sido enviados.</p>
+      <div class="contact-details">
+        <div class="contact-item">
+          <div class="contact-item-icon">📍</div>
+          <div class="contact-item-text">
+            <strong>Morada</strong>
+            <span>Rua do Erro 404, nº undefined, SJM</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">📧</div>
+          <div class="contact-item-text">
+            <strong>Email</strong>
+            <span>problemas@sjmsolutions.pt</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">📞</div>
+          <div class="contact-item-text">
+            <strong>Telefone</strong>
+            <span>NaN-NaN-NaN (linha de emergência inútil)</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">🕐</div>
+          <div class="contact-item-text">
+            <strong>Horário</strong>
+            <span>Seg–Sex: 10h–12h (talvez). Fins de semana: não.</span>
+          </div>
+        </div>
+      </div>  
+    </div>
+    <div class="contact-form">
+      <h3>Descreva o seu problema inútil</h3>
+      <div class="form-group">
+        <label for="nome">O seu nome</label>
+        <input type="text" id="nome" placeholder="Nome (ou alcunha profissional)" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="email@empresa.pt" />
+      </div>
+       <div class="form-group">
+        <label for="tipo">Tipo de problema</label>
+        <select id="tipo">
+          <option value="">Selecione o nível de inutilidade</option>
+          <option value="baixo">🟢 Levemente inútil</option>
+          <option value="medio">🟡 Moderadamente absurdo</option>
+          <option value="alto">🔴 Completamente desnecessário</option>
+          <option value="critico">💀 Sem esperança — contactar urgente</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="urgencia">Urgência (em bananas 🍌)</label>
+        <select id="urgencia">
+          <option value="">Selecione a urgência</option>
+          <option value="1">1 banana — pode esperar décadas</option>
+          <option value="2">3 bananas — há alguma pressa</option>
+          <option value="3">7 bananas — situação banana</option>
+          <option value="4">🍌🍌🍌🍌🍌 — EMERGÊNCIA TOTAL</option>
+        </select>
+          <div class="form-group">
+        <label for="mensagem">Descreva o problema em detalhe desnecessário</label>
+        <textarea id="mensagem" placeholder="Quanto mais irrelevante a informação, melhor. Mencione a cor das paredes do escritório."></textarea>
+      </div>
+      <button class="form-submit" onclick="enviarFormulario()">Enviar problema →</button>
+      <div id="form-success">
+        ✓ Problema recebido com sucesso. Estamos a ignorá-lo por enquanto.
+      </div>
+      </div>
+    </div>
+  </section>
+   <footer class="footer">
+    <div class="footer-logo">SJM<span>Solutions</span></div>
+    <p class="footer-tagline">"Resolvemos problemas que nunca deveriam existir."</p>
+    <nav class="footer-nav">
+      <a href="index.html">Início</a>
+      <a href="equipa.html">Equipa</a>
+      <a href="projetos.html">Projetos</a>
+      <a href="contactos.html">Contactos</a>
+    </nav>
+    <p class="footer-copy">© 2026 SJM Solutions. Todos os problemas reservados.</p>
+  </footer>
+  <script src="../Js/js.js"></script>
+</body>
+</html>
