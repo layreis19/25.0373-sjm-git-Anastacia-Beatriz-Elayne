@@ -156,7 +156,6 @@ a { text-decoration: none; color: inherit; }
   .team-section, .projects-section { padding: 4rem 1.5rem; }
   .team-grid { grid-template-columns: 1fr; }
   .projects-grid { grid-template-columns: 1fr; }
-}
 
   .nav-links.open { display: flex; }
   .nav-toggle { display: block; }
@@ -168,7 +167,6 @@ a { text-decoration: none; color: inherit; }
   .page-header { padding: 7rem 1.5rem 3rem; }
   .footer { padding: 3rem 1.5rem; }
 }
-
 .team-section { padding: 5rem 4rem; }
 .team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
 .team-card {
